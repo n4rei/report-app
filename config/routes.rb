@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'lesson_class/index'
   devise_for :users
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root to:"lesson_class#index"
 end
